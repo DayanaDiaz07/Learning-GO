@@ -4,23 +4,23 @@ import (
 	"container/list"
 	"fmt"
 	"reflect"
+
+	"rsc.io/quote"
 )
 
 func main() {
+	fmt.Println(quote.Hello())
 	fmt.Println("Hola, Go!")
 
 	//Variables
 
 	var myString string = "Esto es una cadena de texto"
-
 	fmt.Println(myString)
 
 	myString = "aqui cambio el valor de la cadena de texto"
-
 	fmt.Println(myString)
 
 	var myString2 = "Esto es una cadena de texto sin declarar el tipo de variable"
-
 	fmt.Println(myString2)
 
 	var myInt int64 = 7
@@ -29,13 +29,11 @@ func main() {
 	fmt.Println(myString, myInt)
 	fmt.Printf("%s %d", myString, myInt)
 	fmt.Println()
-
 	fmt.Println(reflect.TypeOf(myInt))
 
 	var myFloat = 6.5
 	fmt.Println(myFloat)
 	fmt.Println(reflect.TypeOf(myFloat))
-
 	fmt.Println(myInt + int64(myFloat))
 
 	var myBool bool = true
