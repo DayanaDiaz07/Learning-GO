@@ -113,6 +113,8 @@ func main() {
 
 	fmt.Println(myStuct)
 	fmt.Println(myStuct.name)
+
+	excersize1.Triangulo()
 }
 
 func myFunction() {
